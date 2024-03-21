@@ -33,7 +33,13 @@ dp.include_router(admin_router)
 
 async def on_startup(bot):
 
+<<<<<<< HEAD
     # await drop_db()
+=======
+    run_param = False
+    if run_param:
+        await drop_db()
+>>>>>>> 41a3b4ba516e46840c58ced2679995839d8912de
 
     await create_db()
 
@@ -50,7 +56,11 @@ async def main():
 
     await bot.delete_webhook(drop_pending_updates=True)
     # await bot.delete_my_commands(scope=types.BotCommandScopeAllPrivateChats())
+<<<<<<< HEAD
     # await bot.set_my_commands(commands=private, scope=types.BotCommandScopeAllPrivateChats())
+=======
+    await bot.set_my_commands(commands=private, scope=types.BotCommandScopeAllPrivateChats())
+>>>>>>> 41a3b4ba516e46840c58ced2679995839d8912de
     await dp.start_polling(bot, allowed_updates=dp.resolve_used_update_types())
 
 asyncio.run(main())

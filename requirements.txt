@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 aiogram==3.3.0
 sqlalchemy==2.0.25
 python-dotenv
+=======
+aiogram
+python-dotenv
+sqlalchemy
+>>>>>>> 41a3b4ba516e46840c58ced2679995839d8912de
 asyncpg
 aiosqlite
